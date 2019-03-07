@@ -10,3 +10,5 @@ https://www.banggood.com/ATmega328P-Nano-V3-Controller-Board-Compatible-Arduino-
 
 This library is required for the sketch to function:
 https://github.com/miguelbalboa/rfid
+
+This uses code from https://nfckey.xyz/ to generate the unique key for the tag and so is licenced under the GPL to comply
