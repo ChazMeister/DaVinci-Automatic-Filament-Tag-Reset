@@ -1,5 +1,11 @@
 # DaVinci-Automatic-Filament-Tag-Reset
-Uses an MFRC522 reader to automatically reset the tag to maximum spool length and allow 3rd party filament to be used with the DaVinci Jr 1.0 printer
+
+Note: This will be properly written up with pictures and more information in the future
+
+I am not responisble for any damage to your hardware through the use of this code.
+
+
+This uses an MFRC522 reader to automatically reset the tag to maximum spool length and allow 3rd party filament to be used with the DaVinci Jr 1.0 printer
 
 
 This requires the following or similar hardware:
