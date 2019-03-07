@@ -42,10 +42,9 @@ MFRC522 mfrc522(SS_PIN, RST_PIN); // Create MFRC522 instance
 
 void setup() {
   Serial.begin(115200);   // Initialize serial communications with the PC
-  while (!Serial);    // Do nothing if no serial port is opened (added for Arduinos based on ATMEGA32U4)
+//   while (!Serial);    // Do nothing if no serial port is opened (added for Arduinos based on ATMEGA32U4)
   SPI.begin();      // Init SPI bus
   mfrc522.PCD_Init();   // Init MFRC522
-//  Serial.println(F("Scan PICC to see UID, type, and data blocks..."));
   Serial.print("\n\n--------------\n\nWaiting for tag\n\n--------------\n\n\n");
 
 }
@@ -134,6 +133,7 @@ void loop() {
   Serial.print("\n\n--------------\n\nWaiting for tag\n\n--------------\n\n\n");
 }
 
+// The code below is used for calculating the key and is from https://nfckey.xyz/
 void printHex(uint8_t array[], unsigned int len) {
   char buffer[3];
   buffer[2] = NULL;
