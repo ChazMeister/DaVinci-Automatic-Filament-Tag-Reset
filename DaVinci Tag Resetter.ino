@@ -1,4 +1,4 @@
-// DaVinci Jr Automatic 300m Tag Resetter - ChazMeister
+// DaVinci Jr Automatic 300m Tag Resetter by ChazMeister - https://github.com/ChazMeister/DaVinci-Automatic-Filament-Tag-Reset
 
 // NTAG AUTH example made by GARGANTUA from RoboCreators.com & paradoxalabs.com
 // From MFRC522 Library: https://github.com/miguelbalboa/rfid
