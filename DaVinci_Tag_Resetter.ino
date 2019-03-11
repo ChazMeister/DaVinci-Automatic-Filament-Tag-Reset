@@ -85,9 +85,6 @@ void loop() {
   //Print PassWordACK
   Serial.print(pACK[0], HEX);
   Serial.println(pACK[1], HEX);
-
-  byte WBuff[] = {0x00, 0x00, 0x00, 0x04};
-  byte RBuff[18];
   
   Serial.print("\n\n--------------\n\nDumping data before write\n\n--------------\n\n\n");
   
@@ -125,7 +122,6 @@ void loop() {
   byte dBuff6[] = {0xF2, 0x6E, 0x4D, 0x76};
   Serial.println((MFRC522::StatusCode) mfrc522.MIFARE_Ultralight_Write(page, dBuff6, buffSize) == MFRC522::STATUS_OK ? "OK" : "NOT WRITTEN");
 
-  Serial.print("\n\n--------------\n\nData Written\n\n--------------\n\n\n");
   Serial.print("\n\n--------------\n\nDumping new memory...\n\n--------------\n\n\n");
   mfrc522.PICC_DumpMifareUltralightToSerial();
   Serial.print("\n\n--------------\n\nRemove tag\n\n--------------\n\n\n");
